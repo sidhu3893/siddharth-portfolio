@@ -1,0 +1,32 @@
+:root {
+  --yellow: #FDB913;
+  --gold: #F5A800;
+  --blue: #004B8D;
+  --blue-light: #0066CC;
+  --dark: #0a0a0f;
+  --dark2: #111118;
+  --dark3: #1a1a28;
+  --white: #ffffff;
+  --gray: #aaaacc;
+  --purple: #6C3AE8;
+  --teal: #00C9A7;
+  --orange: #FF6B35;
+  --pink: #FF4D8D;
+
+  --font-main: 'Poppins', sans-serif;
+  --font-head: 'Orbitron', sans-serif;
+
+  --shadow-yellow: 0 0 30px rgba(253, 185, 19, 0.4);
+  --shadow-blue: 0 0 30px rgba(0, 75, 141, 0.5);
+  --radius: 16px;
+  --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-main);
+  background: var(--dark);
+  color: var(--white);
+  overflow-x: hidden;
+}

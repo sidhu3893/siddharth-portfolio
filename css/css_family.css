@@ -1,0 +1,42 @@
+.family-section { background: var(--dark2); }
+.family-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto 28px;
+}
+.family-card {
+  background: linear-gradient(135deg, var(--dark3), rgba(253,185,19,0.08));
+  border: 1px solid rgba(253,185,19,0.2);
+  border-radius: var(--radius);
+  padding: 36px 24px;
+  text-align: center;
+  transition: var(--transition);
+}
+.family-card:hover { transform: translateY(-8px); border-color: var(--yellow); box-shadow: var(--shadow-yellow); }
+.center-card {
+  background: linear-gradient(135deg, rgba(253,185,19,0.15), rgba(0,75,141,0.2));
+  border-color: rgba(253,185,19,0.4);
+}
+.family-emoji { font-size: 3rem; margin-bottom: 14px; display: block; }
+.family-card h3 { font-size: 1.2rem; font-weight: 700; color: var(--yellow); margin-bottom: 4px; }
+.family-role { color: var(--teal); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+.family-card p { color: var(--gray); font-size: 0.9rem; line-height: 1.65; }
+
+.sister-card {
+  background: linear-gradient(135deg, rgba(255,77,141,0.12), rgba(108,58,232,0.12));
+  border: 1px solid rgba(255,77,141,0.25);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  text-align: center;
+  max-width: 380px;
+  margin: 0 auto;
+  transition: var(--transition);
+}
+.sister-card:hover { transform: translateY(-8px); border-color: var(--pink); box-shadow: 0 0 30px rgba(255,77,141,0.3); }
+.sister-card h3 { color: var(--pink); font-size: 1.2rem; font-weight: 700; margin-bottom: 4px; }
+
+@media (max-width: 640px) {
+  .family-grid { grid-template-columns: 1fr; }
+}

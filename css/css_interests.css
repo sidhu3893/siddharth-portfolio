@@ -1,0 +1,56 @@
+.interests-section { background: var(--dark); }
+.interests-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+.interest-card {
+  border-radius: var(--radius);
+  padding: 36px 24px;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid transparent;
+  cursor: default;
+}
+.interest-card:hover { transform: translateY(-10px) scale(1.03); }
+.interest-icon { font-size: 3rem; margin-bottom: 16px; display: block; }
+.interest-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; }
+.interest-card p { font-size: 0.9rem; line-height: 1.65; opacity: 0.85; }
+
+.csk-card {
+  background: linear-gradient(135deg, rgba(253,185,19,0.15), rgba(0,75,141,0.25));
+  border-color: rgba(253,185,19,0.35);
+}
+.csk-card:hover { box-shadow: 0 0 40px rgba(253,185,19,0.3); border-color: var(--yellow); }
+.csk-card h3 { color: var(--yellow); }
+
+.vijay-card {
+  background: linear-gradient(135deg, rgba(255,107,53,0.15), rgba(255,77,141,0.15));
+  border-color: rgba(255,107,53,0.3);
+}
+.vijay-card:hover { box-shadow: 0 0 40px rgba(255,107,53,0.3); border-color: var(--orange); }
+.vijay-card h3 { color: var(--orange); }
+
+.f1-card {
+  background: linear-gradient(135deg, rgba(108,58,232,0.2), rgba(0,102,204,0.2));
+  border-color: rgba(108,58,232,0.3);
+}
+.f1-card:hover { box-shadow: 0 0 40px rgba(108,58,232,0.3); border-color: var(--purple); }
+.f1-card h3 { color: var(--purple); }
+
+.food-card {
+  background: linear-gradient(135deg, rgba(255,77,141,0.15), rgba(253,185,19,0.15));
+  border-color: rgba(255,77,141,0.3);
+}
+.food-card:hover { box-shadow: 0 0 40px rgba(255,77,141,0.3); border-color: var(--pink); }
+.food-card h3 { color: var(--pink); }
+
+.gym-card {
+  background: linear-gradient(135deg, rgba(0,201,167,0.15), rgba(0,75,141,0.2));
+  border-color: rgba(0,201,167,0.3);
+}
+.gym-card:hover { box-shadow: 0 0 40px rgba(0,201,167,0.3); border-color: var(--teal); }
+.gym-card h3 { color: var(--teal); }
+
+.explore-card {
+  background: linear-gradient(135deg, rgba(0,75,141,0.25), rgba(108,58,232,0.2));
+  border-color: rgba(0,102,204,0.3);
+}
+.explore-card:hover { box-shadow: 0 0 40px rgba(0,102,204,0.3); border-color: var(--blue-light); }
+.explore-card h3 { color: var(--blue-light); }

@@ -1,9 +1,11 @@
 const phrases = [
   'ECE Engineer 🔌',
+  'IoT Enthusiast 📡',
   'CSK Die-Hard Fan 🏏',
   'Intern @ Psiog Digital 💼',
+  'Biryani Connoisseur 🍛',
   'Verstappen Fan 🏎️',
-  'Music Lover',
+  'Music Lover 🎵',
   'Problem Solver 🧠',
 ];
 

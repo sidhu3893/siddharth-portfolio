@@ -1,9 +1,8 @@
 const phrases = [
   'ECE Engineer 🔌',
-  'IoT Enthusiast 📡',
   'CSK Die-Hard Fan 🏏',
   'Intern @ Psiog Digital 💼',
-  'Biryani Connoisseur 🍛',
+  'Biryani Lover 🍛',
   'Verstappen Fan 🏎️',
   'Music Lover 🎵',
   'Problem Solver 🧠',

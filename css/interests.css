@@ -45,25 +45,26 @@
   display: block;
 }
 
-.interest-card h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+.interest-card {
+  border-radius: var(--radius);
+  padding: 22px 18px;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid transparent;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 
-.interest-card p {
-  font-size: 0.88rem;
-  line-height: 1.65;
-  opacity: 0.88;
-}
-
-.interest-photo {
+.interest-photo,
+.re-photo {
   margin-top: 14px;
   border-radius: 12px;
   overflow: hidden;
-  border: 2px solid rgba(255,255,255,0.1);
   width: 100%;
-  height: 200px;
+  height: auto;
+  min-height: 250px;
   flex-shrink: 0;
   background: #000;
   display: flex;
@@ -71,11 +72,13 @@
   justify-content: center;
 }
 
-.interest-photo img {
+.interest-photo img,
+.re-photo img {
   width: 100%;
-  height: 200px;
-  object-fit: contain;
-  object-position: center center;
+  height: auto;
+  max-height: 320px;
+  object-fit: cover;
+  object-position: center;
   display: block;
   transition: transform 0.5s ease;
 }

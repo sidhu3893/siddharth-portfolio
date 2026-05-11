@@ -1,4 +1,9 @@
-.interests-section { background: var(--dark); }
+/* =========================
+   INTERESTS SECTION
+========================= */
+.interests-section {
+  background: var(--dark);
+}
 
 .interests-grid {
   display: grid;
@@ -6,9 +11,22 @@
   gap: 24px;
   align-items: stretch;
 }
-@media (max-width: 1100px) { .interests-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px)  { .interests-grid { grid-template-columns: 1fr; } }
 
+@media (max-width: 1100px) {
+  .interests-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   COMMON CARD STYLES
+========================= */
 .interest-card {
   border-radius: var(--radius);
   padding: 28px 22px;
@@ -19,16 +37,38 @@
   display: flex;
   flex-direction: column;
 }
-.interest-card:hover { transform: translateY(-8px) scale(1.02); }
-.interest-icon { font-size: 2.8rem; margin-bottom: 14px; display: block; }
-.interest-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; }
-.interest-card p { font-size: 0.88rem; line-height: 1.65; opacity: 0.88; }
 
-.interest-photo {
+.interest-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.interest-icon {
+  font-size: 2.8rem;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.interest-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.interest-card p {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  opacity: 0.88;
+}
+
+/* =========================
+   COMMON IMAGE STYLES
+========================= */
+.interest-photo,
+.re-photo,
+.anime-photo {
   margin-top: 14px;
   border-radius: 12px;
   overflow: hidden;
-  border: 2px solid rgba(255,255,255,0.1);
   width: 100%;
   height: 200px;
   flex-shrink: 0;
@@ -37,7 +77,22 @@
   align-items: center;
   justify-content: center;
 }
-.interest-photo img {
+
+.interest-photo {
+  border: 2px solid rgba(255,255,255,0.1);
+}
+
+.re-photo {
+  border: 2px solid rgba(139,90,43,0.4);
+}
+
+.anime-photo {
+  border: 2px solid rgba(255,0,140,0.35);
+}
+
+.interest-photo img,
+.re-photo img,
+.anime-photo img {
   width: 100%;
   height: 200px;
   object-fit: contain;
@@ -45,79 +100,135 @@
   display: block;
   transition: transform 0.5s ease;
 }
-.interest-card:hover .interest-photo img { transform: scale(1.05); }
 
+.interest-card:hover .interest-photo img,
+.re-card:hover .re-photo img,
+.anime-card:hover .anime-photo img {
+  transform: scale(1.05);
+}
+
+/* =========================
+   INDIVIDUAL CARDS
+========================= */
+
+/* CSK */
 .csk-card {
   background: linear-gradient(135deg, rgba(253,185,19,0.15), rgba(0,75,141,0.25));
   border-color: rgba(253,185,19,0.35);
 }
-.csk-card:hover { box-shadow: 0 0 40px rgba(253,185,19,0.3); border-color: var(--yellow); }
-.csk-card h3 { color: var(--yellow); }
+.csk-card:hover {
+  box-shadow: 0 0 40px rgba(253,185,19,0.3);
+  border-color: var(--yellow);
+}
+.csk-card h3 {
+  color: var(--yellow);
+}
 
+/* Vijay */
 .vijay-card {
   background: linear-gradient(135deg, rgba(255,107,53,0.15), rgba(255,77,141,0.15));
   border-color: rgba(255,107,53,0.3);
 }
-.vijay-card:hover { box-shadow: 0 0 40px rgba(255,107,53,0.3); border-color: var(--orange); }
-.vijay-card h3 { color: var(--orange); }
+.vijay-card:hover {
+  box-shadow: 0 0 40px rgba(255,107,53,0.3);
+  border-color: var(--orange);
+}
+.vijay-card h3 {
+  color: var(--orange);
+}
 
+/* F1 */
 .f1-card {
   background: linear-gradient(135deg, rgba(108,58,232,0.2), rgba(0,102,204,0.2));
   border-color: rgba(108,58,232,0.3);
 }
-.f1-card:hover { box-shadow: 0 0 40px rgba(108,58,232,0.3); border-color: var(--purple); }
-.f1-card h3 { color: var(--purple); }
+.f1-card:hover {
+  box-shadow: 0 0 40px rgba(108,58,232,0.3);
+  border-color: var(--purple);
+}
+.f1-card h3 {
+  color: var(--purple);
+}
 
+/* Food */
 .food-card {
   background: linear-gradient(135deg, rgba(255,77,141,0.15), rgba(253,185,19,0.15));
   border-color: rgba(255,77,141,0.3);
 }
-.food-card:hover { box-shadow: 0 0 40px rgba(255,77,141,0.3); border-color: var(--pink); }
-.food-card h3 { color: var(--pink); }
+.food-card:hover {
+  box-shadow: 0 0 40px rgba(255,77,141,0.3);
+  border-color: var(--pink);
+}
+.food-card h3 {
+  color: var(--pink);
+}
 
+/* Gym */
 .gym-card {
   background: linear-gradient(135deg, rgba(0,201,167,0.15), rgba(0,75,141,0.2));
   border-color: rgba(0,201,167,0.3);
 }
-.gym-card:hover { box-shadow: 0 0 40px rgba(0,201,167,0.3); border-color: var(--teal); }
-.gym-card h3 { color: var(--teal); }
+.gym-card:hover {
+  box-shadow: 0 0 40px rgba(0,201,167,0.3);
+  border-color: var(--teal);
+}
+.gym-card h3 {
+  color: var(--teal);
+}
 
+/* Explore */
 .explore-card {
   background: linear-gradient(135deg, rgba(0,75,141,0.25), rgba(108,58,232,0.2));
   border-color: rgba(0,102,204,0.3);
 }
-.explore-card:hover { box-shadow: 0 0 40px rgba(0,102,204,0.3); border-color: var(--blue-light); }
-.explore-card h3 { color: var(--blue-light); }
+.explore-card:hover {
+  box-shadow: 0 0 40px rgba(0,102,204,0.3);
+  border-color: var(--blue-light);
+}
+.explore-card h3 {
+  color: var(--blue-light);
+}
 
+/* Royal Enfield */
 .re-card {
   background: linear-gradient(135deg, rgba(139,90,43,0.2), rgba(253,185,19,0.12));
   border-color: rgba(139,90,43,0.4);
 }
-.re-card:hover { box-shadow: 0 0 40px rgba(139,90,43,0.4); border-color: #8B5A2B; }
-.re-card h3 { color: #C8860A; }
-.re-photo {
-  margin-top: 14px;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 2px solid rgba(139,90,43,0.4);
-  height: 200px;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.re-card:hover {
+  box-shadow: 0 0 40px rgba(139,90,43,0.4);
+  border-color: #8B5A2B;
 }
-.re-photo img {
-  width: 100%;
-  height: 200px;
-  object-fit: contain;
-  object-position: center center;
-  transition: transform 0.5s ease;
+.re-card h3 {
+  color: #C8860A;
 }
-.re-card:hover .re-photo img { transform: scale(1.05); }
 
+/* Series / Breaking Bad */
 .series-card {
   background: linear-gradient(135deg, rgba(0,201,167,0.12), rgba(0,75,141,0.2));
   border-color: rgba(0,201,167,0.3);
 }
-.series-card:hover { box-shadow: 0 0 40px rgba(0,201,167,0.3); border-color: var(--teal); }
-.series-card h3 { color: var(--teal); }
+.series-card:hover {
+  box-shadow: 0 0 40px rgba(0,201,167,0.3);
+  border-color: var(--teal);
+}
+.series-card h3 {
+  color: var(--teal);
+}
+
+/* =========================
+   NEW ADDITIONAL SECTION
+   ANIME / ENTERTAINMENT
+========================= */
+.anime-card {
+  background: linear-gradient(135deg, rgba(255,0,140,0.15), rgba(108,58,232,0.18));
+  border-color: rgba(255,0,140,0.35);
+}
+
+.anime-card:hover {
+  box-shadow: 0 0 40px rgba(255,0,140,0.3);
+  border-color: #ff008c;
+}
+
+.anime-card h3 {
+  color: #ff4db8;
+}
